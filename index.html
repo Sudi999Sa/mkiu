@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>𝗘𝗗𝗨𝗡𝗜𝗧𝗬</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>𝗘𝗗𝗨𝗡𝗜𝗧𝗬</h1>
+      <H3>by ANINDA ROY</H3>
+      <p>Creating Unforgettable Experiences with  EDUNITY</p>
+      <a href="#contact" class="rgb-button">Plan Your FUTURE</a>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2>Web Services</h2>
+    <div class="service-cards">
+      <div class="card">ADDMITION</div>
+      <div class="card">FEES PAYMENT</div>
+      <div class="card">APPOINTMENT</div>
+      <div class="card">UPCOMMING EVENTS</div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We specialize in curating extraordinary events infused with creativity, style, and color.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>APPOINTMENT BOOKING</h2>
+    <form action="https://formspree.io/f/xkgryjng" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="tel" name="phone" placeholder="Your Mobile Number" required 
+         pattern="[0-9]{10}" maxlength="10" />
+      <input type="email" name="email" placeholder="Your Email" required/>
+      <input type="text" name="type" placeholder="What the resone" required/>
+      <input type="date" name="date" required/>
+      <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 EDUNITY. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! We'll get in touch soon.");
+    });
+  </script>
+</body>
+</html>
